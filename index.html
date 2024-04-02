@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucmo Manutenção Industrial</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        // JavaScript para abrir a imagem em um modal ao clicar
+        function openModal(imgSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+    </script>
 </head>
 <body>
 
@@ -27,12 +41,16 @@
 
 
     <section class="main_bg_sec" id="quem-somos">
-        <div class="main_content intro-content">
-            <div class="content">
+        <div class="main_content intro-content flex-container">
+            <div class="content left-text">
                 <h2>Quem Somos?</h2>
-                <p>Somos uma empresa especializada na produção de itens e produtos industriais, tais como reservatórios de água, tubulações e tanques, 
-                    serviços de calderaria e usinagem.
+                <p>Somos uma empresa especializada na produção de itens e produtos industriais, 
+                    serviços de calderaria e usinagem. A nossa empresa atua desde os anos 2000 no segmento industrial com os seguintes itens: Reservatórios em aço inox de padrão sanitário,
+                    tubulações de padrão sanitário, fermentadores, calderaria e usinagem em geral.
                 </p>
+            </div>
+            <div class="content-img">
+                <img src="img/Welder-PNG-Free-Download.png" alt="soldador">
             </div>
         </div>
     </section>
@@ -64,7 +82,7 @@
             </h2>
             <p class="grid-spacing">Fotos de Serviços feitos por nós </p>
             <div class="grid">
-                <div class="gallery-img">
+                <div class="gallery-img gallery-container">
                     <img src="img/corrimão.jpeg" alt="Corrimão feito em Aço Inox">
                 </div>
                 <div class="gallery-img">
@@ -100,7 +118,13 @@
             <p>
                 <a href="https://wa.me/+5511945884095">
                     <img src="img/whats logo portfolio.jpg" alt="WhatsApp" width="20px" height="20px">
-                    +55 (11) 94588-4095
+                    +55 (11) 94588-4095 - Luiz Carlos
+                </a>
+            </p>
+            <p>
+                <a href="https://wa.me/+5511976662930">
+                    <img src="img/whats logo portfolio.jpg" alt="WhatsApp" width="20px" height="20px">
+                    +55 (11) 97666-2930 - Ivanir
                 </a>
             </p>
 
